@@ -26,9 +26,8 @@ resource "ibmcloud_cs_cluster" "testacc_cluster" {
     workers = [{name="worker1",  action="add"},]
     webhook = [{level="Normal",  type="slack", url="https://hooks.slack.com/services/yt7rebjhgh2r4rd44fjk"},]
     org_guid = "test"
-	space_guid = "test_space"
-	account_guid = "test_acc"
-}
+    space_guid = "test_space"
+    account_guid = "test_acc"
 }
 ```
 
